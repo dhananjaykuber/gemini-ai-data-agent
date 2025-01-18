@@ -12,7 +12,10 @@ const implementations = {
   },
 
   async getCollectionInfo({ collectionName }) {
-    const collection = mongoose.model(collectionName);
+    const modelName =
+      collectionName === 'students' ? 'Student' : collectionName;
+
+    const collection = mongoose.model(modelName);
 
     const documentCount = await collection.countDocuments();
     const sampleDocument = await collection.findOne();
