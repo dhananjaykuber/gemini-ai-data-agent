@@ -16,7 +16,7 @@ A Node.js application that uses Google's Gemini AI to process natural language q
 ### Natural Language Query
 
 ```http
-POST /query
+POST /api/query
 Content-Type: application/json
 
 {
@@ -93,7 +93,7 @@ Content-Type: application/json
 ### Natural Language Query
 
 ```http
-POST /query
+POST /api/query
 Content-Type: application/json
 
 {
